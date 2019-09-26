@@ -25,7 +25,7 @@ SECRET_KEY = 'r(s@s^if+6rmu3-ztbny&y*=-gu4k#-i5p68c(%9v2%ocw&4gr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['e9bbc902.ngrok.io','127.0.0.1:8000','127.0.0.1']
 
 
 # Application definition
@@ -127,3 +127,4 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
+

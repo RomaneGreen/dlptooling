@@ -1,0 +1,24 @@
+  
+<div class="row">
+    <div class="large-12 columns">
+        {# Upload Files #}
+        <div class="large-6 columns">
+            <form method="post" name="upload_dlp_file" enctype="multipart/form-data"
+                  action="{% url 'events:upload_dlp_file' %}">{% csrf_token %}
+            <p>
+                <i class="fa fa-cloud-upload" aria-hidden="true" style="color:#85144b"></i>
+                <font color="#85144b"><b>DLP File Upload</b></font>&nbsp;
+            </p>
+            <p>
+                Please click the "Choose Files" button.
+            </p>
+            <ul>
+                <li>
+                    <input type="file" name="dlp_file"/><br><br>
+                    <input type="submit" name="upload_dlp_file" value="Upload">
+                </li>
+            </ul>
+            </form>
+        </div>
+    </div>
+</div>

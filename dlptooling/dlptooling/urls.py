@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from django.conf.urls import url
+from dlptooling import views
 
+app_name = 'dlptooling'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^events/', include('events.urls', namespace="events")),
+     url(r'^file-upload', views.upload_dlp_file, name='upload_dlp_file'),
 
 ]
